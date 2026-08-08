@@ -1,0 +1,26 @@
+{
+  "name": "discord-handle-watcher",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Availability watcher for a rate-limited HTTP API with an adaptive (AIMD) rate limiter",
+  "bin": {
+    "handle-watcher": "./bin/cli.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "auth": "node bin/cli.mjs auth",
+    "probe": "node bin/cli.mjs probe",
+    "scan": "node bin/cli.mjs scan",
+    "watch": "node bin/cli.mjs watch",
+    "gen": "node bin/cli.mjs gen"
+  },
+  "dependencies": {
+    "undici": "^7.10.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.50.0"
+  },
+  "engines": {
+    "node": ">=20.12"
+  }
+}
